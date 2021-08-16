@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:selectableItemBackground"
+    android:backgroundTint="#30000000"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:background="@color/colorMessGray"
+    tools:ignore="UseCompoundDrawables">
+
+    <android.support.v4.widget.SlidingPaneLayout
+        android:layout_width="0dp"
+        android:layout_height="15dp">
+
+    </android.support.v4.widget.SlidingPaneLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userAvatarImage"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_avatar_placeholder" />
+
+        <TextView
+            android:id="@+id/usernameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="85dp"
+            android:padding="8dp"
+            android:textColor="@color/chat_text"
+            android:textStyle="bold"
+            tools:text="Drew" />
+
+        <TextView
+            android:id="@+id/messageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="21dp"
+            android:background="@drawable/message_board"
+            android:padding="8dp"
+            android:textColor="@color/chat_text"
+            tools:text="Lorem ipsum dolor sit amet, consectetr adipiscing elit. Suspendisse pharetra, sapien at luctus semper, leo." />
+
+    </RelativeLayout>
+
+</LinearLayout>

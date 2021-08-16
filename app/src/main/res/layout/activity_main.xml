@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gpc_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_gravity="left"
+                android:alpha="0.9"
+                android:background="@drawable/ripple_effect_for_gray"
+                android:drawableLeft="@drawable/ic_chat"
+                android:drawablePadding="20dp"
+                android:gravity="left|center_vertical"
+                android:onClick="onChatClicked"
+                android:paddingLeft="20dip"
+                android:text="@string/chat_button"
+                android:textSize="@dimen/button_text_size" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="24dp"
+                android:alpha="0.9"
+                android:background="@drawable/ripple_effect_for_gray"
+                android:drawableLeft="@drawable/ic_lock"
+                android:drawablePadding="20dp"
+                android:gravity="left|center_vertical"
+                android:onClick="onLoginClicked"
+                android:paddingLeft="20dip"
+                android:text="@string/login_button"
+                android:textSize="@dimen/button_text_size" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="24dp"
+                android:alpha="0.9"
+                android:background="@drawable/ripple_effect_for_gray"
+                android:drawableLeft="@drawable/ic_animation"
+                android:drawablePadding="20dp"
+                android:gravity="left|center_vertical"
+                android:onClick="onAnimationClicked"
+                android:paddingLeft="20dip"
+                android:text="@string/animation_button"
+                android:textSize="@dimen/button_text_size" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
